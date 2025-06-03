@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de comentarios</title>
+  <link rel="stylesheet" type="text/css" href="../Estils/Estils_principals.css">
+</head>
+<body>
+ 
+
+  <main>
+    <section class="formulario-comentarios">
+      <h2 class="TITULS">Deixa el teu comentari!</h2>
+
+      <form id="formulario-comentarios">
+        <label for="nombre">Nom:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correu (opcional):</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="comentario">Comentari:</label>
+        <textarea id="comentario" name="comentario" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <ul id="comentarios">
+        </ul>
+    </section>
+  </main>
+</body>
+</html>
