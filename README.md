@@ -1,4 +1,4 @@
-# 🌐 Nombre del Proyecto
+# 🌐 WEB
 
 Proyecto desarrollado utilizando **HTML y CSS** como parte de mi formación en el ciclo de Sistemas Microinformáticos y Redes. Este sitio web tiene como objetivo 
 
