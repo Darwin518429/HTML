@@ -1,0 +1,566 @@
+
+body{
+  font-size: 1.1rem;
+   margin: 0;
+     padding: 0;
+
+background-color: #e5e5f7;
+opacity: 1;
+background-image:  linear-gradient(#444cf7 1.3px, transparent 1.3px), linear-gradient(to right, #444cf7 1.3px, #e5e5f7 1.3px);
+background-size: 26px 26px;
+
+
+}
+/* Aqui es el pequeño fondo */
+/*Aqui cominezo de la presentaicon  */
+
+
+.fondo{
+  position:relative;
+width: 100%;
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./Imagenes/tecnologia.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+height: 650px;
+display:flex ;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+#linkedin{border: solid 3px blue;
+  margin-top: 10px;
+  border-radius: 100% ;
+height: 50px;
+width: 50px;
+}
+p{color: white; margin: 30px;}
+
+.bloqueTexto{width: 550px}
+#fotofondo{
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  border: solid 5px rgb(0, 131, 253);
+
+
+}
+   
+.negrotrans{
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  opacity: 0.5;
+}
+h1,h2,h3,h4,h5,h6{
+  text-align: center ;
+  color: white;
+}
+section {
+  margin: 20px;}
+
+.midle{
+text-align: center  ;
+}
+ .aboutme {
+ background-color:aqua;
+width: 70%;
+flex-grow: 2;
+margin: 10px;
+ flex-shrink: 1;
+ background: #0000ff;
+background: linear-gradient(160deg,rgba(0, 0, 255, 1) 10%, rgba(32, 109, 250, 1) 46%, rgba(0, 64, 184, 1) 100%);
+}
+ 
+
+
+.forma{ /* Titulos*/
+  
+  width: 50%;
+        background: #000000;
+background: linear-gradient(155deg,rgba(0, 0, 0, 1) 65%, rgba(0, 64, 184, 1) 0%);
+  margin: 20px auto;
+   top: 0%;
+   left:0;
+   right:0;
+   bottom:0;
+}
+.titleBig{
+font-size: 50px;
+}
+/*Menu  */
+.nada{
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(211, 200, 200);
+     margin: 0;
+  padding: 0;
+}
+
+
+
+/*  Animaciones del m,enu */
+li,button{padding: 10px;
+transition-duration: 1s;
+background-color: rgb(14, 80, 204);}
+li:hover, button:hover{
+  color: white;
+  background-color:aqua;
+  text-decoration:underline;
+  
+}
+
+
+
+/* -------------------*/
+
+header{
+  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+background: #0000ff;
+background: linear-gradient(160deg,rgba(0, 0, 255, 1) 10%, rgba(32, 109, 250, 1) 46%, rgba(0, 64, 184, 1) 100%);
+
+  
+  width: 100%;
+  height: 100px
+
+}
+
+.menu{display: flex;
+  flex-flow: row nowrap;
+  justify-content:  space-between;
+  position: sticky;
+  top: 0; bottom: 0; left: 0;  right: 0;
+}
+
+
+/* -------------------*/
+
+/* Sobre mi tarjetad e dexripcin*/ 
+.flex{
+  display:flex;
+ flex-flow: row wrap;
+ gap: 10px;
+ /* background-color: bisque;*/ 
+
+}
+/* Formacion seccion */
+
+/* Imagenes  */
+
+.imagenes{
+
+  position:absolute;
+}
+
+
+/* Planes */
+
+
+
+
+.planes{width:100%;
+height: 600px;
+
+display: grid;
+grid-template-columns: 1fr 11fr;
+grid-template-rows: repeat(5,1fr) ;
+gap: 20px;
+
+}
+
+
+#a{grid-row: 5; margin-left: 50px;} 
+#b{grid-row: 4; margin-left: 50px;}
+#c{grid-row: 3; margin-left: 50px;}
+#d{grid-row: 2; margin-left: 50px;}
+#e{grid-row: 1; margin-left: 50px;}
+
+.icono{background-color:rgb(147, 151, 151);
+  position: relative;
+max-width: 80%;
+overflow:hidden;
+transition-property: all;
+transition-duration: 0.5s;
+ transition-timing-function: ease;
+
+
+}
+
+.imgCentrar{margin: 0 auto; display: block;
+height: 250px;
+width: 100%;}
+.icono:hover {
+  overflow: visible;
+  scale: 1.2;
+  height: 100%;
+  z-index: 1;
+}
+#barra{ 
+  width: 50px;
+  transform: scaley(-1);
+  border: solid 5px black;
+ grid-row: 1 / span 6;
+}
+/* -----------------------*/
+
+/*Animacion  */
+.activarColor{
+
+
+ animation: colorBien;
+animation-duration: 2s;
+animation-fill-mode: both;
+}
+
+@keyframes colorBien {
+  from{background: #838383;}
+
+  to{background-color: rgb(5, 209, 49);}
+}
+
+@keyframes barra {
+  from{height: 0%;
+  }
+
+  to{height: 180px;}
+
+  
+}
+
+#relleno{
+  
+ animation: barra;
+animation-duration: 2s;
+animation-fill-mode: both;
+
+height: 30%;
+ background-color: rgb(5, 209, 49);
+}
+/* --------------------------*/
+
+
+
+ /* Seccion Experiencai laboral */
+ .flex2{
+ display: flex;
+
+  height: 100%;
+ 
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: center;  
+  align-items: flex-start;
+  align-content: center;   
+ }
+
+  .flex2modified{
+    background-color:rgb(48, 120, 255);
+  width:40%;
+  height: 80%;
+  position:relative;
+   height: 400px;
+   width: 400px;
+  }
+
+  footer{
+    margin: 0;
+      background: #0000ff;
+background: linear-gradient(160deg,rgba(0, 0, 255, 1) 10%, rgba(32, 109, 250, 1) 46%, rgba(0, 64, 184, 1) 100%);
+    position: relative;
+    width: 100%;
+    height: 150px;
+    
+  }
+
+  .foot{/* Aqui es la parte  de la tarjeta */
+    position: absolute;
+    top:60%;
+    width: 100%;
+    height: 40%;
+    background-color:rgb(12, 0, 180);
+    color: white;
+
+   /*  ANIMACION*/
+   transition-duration: 1s;
+
+  }
+
+  .desaparece{
+    opacity: 0;
+  transition-duration:  1s;
+  transition-property: opacity;
+    
+}
+
+.foot:hover .desaparece {
+  opacity: 1;
+
+
+}
+  .foot:hover{
+    top:20%;
+    height: 80%;
+    
+  }
+  .imgcard{
+     width:100%;
+    height: 60%;
+  }
+
+
+/*  Habilidades*/
+.galeria{
+  
+  width:100;
+height: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 2fr;
+gap: 20px;
+grid-template-rows: repeat(5, 150px);
+
+}
+
+
+
+.fotosGaleria{
+background-color: rgb(255, 255, 255);
+border: solid  black 2px;
+border-radius: 10px;
+width: 100%;
+height: 100%;
+  object-fit:fill;
+  transition-duration: 0.5s;
+  transition-timing-function:ease-out;
+}
+
+
+.fotosGaleria:hover{
+scale: 1.1;
+
+}
+.fotosGaleria:first-child{
+
+
+  grid-column: 1 / span 2 ;
+}
+.fotosGaleria:nth-child(7){
+  
+  grid-column: 3 / span 2 ;
+  grid-row: 2 / span 2 ;
+
+}
+
+.fotosGaleria:nth-child(10){
+  
+grid-column: 2 / span 2 ;
+}
+
+/*Formulario  */
+.contenedor {
+ background: #0000ff;
+background: linear-gradient(160deg,rgba(0, 0, 255, 1) 10%, rgba(32, 109, 250, 1) 46%, rgba(0, 64, 184, 1) 100%);
+  width: 500px; /* Ajusta el ancho según tus necesidades */
+  margin: 40px auto; /* Centra el formulario */
+  padding: 30px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-campo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #2915d6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* De momemnto esto para saber */
+
+/**{border: 1px solid white;}*/
+
+
+/* Movil*/ 
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 1.5rem;
+    
+  }
+
+  .fondo {
+    height: 100%;
+    margin-top: 170px;
+  }
+
+  
+
+  .bloqueTexto,
+  .aboutme,
+  .forma,
+  .contenedor-formulario {
+    width: 90%;
+  }
+
+  .midle,
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2em;
+  }
+
+  
+  .menu {
+   
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flex,
+  .flex2 {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  #barra {
+    width: 100%
+  }
+  .flex2modified {
+    width: 95%;
+    height: auto;
+    
+    max-width: 100%;
+  }
+
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+
+  .fotosGaleria,
+  .imgcard {
+    height: 100px;
+    width: 100%;
+    object-fit: cover; /* */
+  }
+
+  .planes {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 10px;
+  }
+
+  #barra {
+    display: none;
+  }
+
+  .icono {
+    max-width: 100%;
+    height: 100%;
+      transition: none;
+     
+  }
+
+
+
+  #fotofondo {
+    height: 250px;
+    width: 250px;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px 0;
+  }
+/* Tarjewta animacion */
+
+.icono:hover{
+
+  scale: 1;
+  
+  z-index: 1;
+}
+  .foot {
+ transition: none ;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+   
+  }
+
+
+
+ .desaparece {
+    transition: none;
+    opacity: 1;
+    
+
+}
+
+
+
+form{
+  position: relative;
+  width: 100%;
+  }
+
+  input,
+textarea, .grupo-campo {
+  
+ width: 100%;
+}
+
+
+
+}
+
+/* Estilos pa js*/
+.cambiocolor{
+ background: #ff0000;
+background: linear-gradient(78deg,rgba(255, 0, 0, 1) 0%, rgba(171, 0, 0, 1) 35%, rgba(255, 64, 0, 1) 100%);
+
+}
+
+.bordeRojo{
+  border: solid 5px red !important;
+}
